@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+     <style>
+        .login-container{
+             height: 100vh;
+             width: 100%;
+             background-color: rgb(52, 2, 255);
+             position: fixed;
+             top:0px;
+             left: 0px;
+             display: flex;
+            
+        }
+        .login-form{
+            height: 100vh;
+            width: 50%;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            
+        }
+        .image{
+            height: 100vh;
+            width: 50%;
+            border: 2px solid black;
+           
+        }
+        .img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 700px;
+            width: 700px;
+        }
+        .form{
+            height: 75vh;
+            width: 60%;
+            background-color: gainsboro;
+            text-align: center;
+            /* margin-top: 20px */
+            padding-top: 20px;
+            /* display: flex; */
+            
+        }
+        h2{
+            height: 40px;
+            font-size: 30px;
+        }
+        /* #forgot{
+             //margin-left: 
+        } */
+        .input
+        {
+            height: 28px;
+             width: 75%;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #Glogo{
+            margin-top: px;
+        }
+        .button{
+            /* display: flex; */
+          
+           height:40px;
+           width: 90px;
+           background-color: blue;
+           color: white;
+           border-radius: 10px;
+           margin-top: 5%;
+           
+        }
+        .button:hover{
+            background-color: white;
+            color:blue;
+            /* transform: scale(1.5); */
+        }
+     </style>
+</head>
+<body>
+        <div class="login-container">
+            <div class="login-form">
+               <div class="form">
+                <h2 align="center" >LOGIN</h2>
+                  <!-- <label >USERNAME :</label> -->
+                  <input type="text" class="input" placeholder="  USERNAME">
+                   <br><br>
+                   <!-- <label >PASSWORD :</label> -->
+                  <input type="text" class="input" placeholder="  PASSWORD">
+                   <br><br>
+                   <a href="#" >Forgot Password</a>
+                   <br>
+                   <button class="button">LOG-IN</button>
+                     <p>------------------ LOGIN WITH OTHER ------------------</p>
+                     <hr width="270px">
+                     <p> LOG-IN WITH <a href="#">GOOGLE</a></p>
+                      <hr width="270px">
+                      <p>LOG-IN WITH <a href="#">FACEBOOK</a></p>
+                      <hr width="270px">
+               </div>
+                
+                
+            </div>
+            <div class="image">
+               <img src="Login2.jpg" alt="" class="img">
+            </div>
+
+        </div>
+</body>
+</html>
