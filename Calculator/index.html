@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-image: url("https://media.istockphoto.com/id/1006024178/vector/business-and-education-ornament-seamless-pattern-vector-illustration.jpg?s=612x612&w=0&k=20&c=_t5LymstVISBPyPL5L57ELPJ-4K9JAOQ9kDPRSRX-uM=");
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        .parent-div{
+            height: 500px;
+            width: 340px;
+            background-color: white;
+            border-radius: 50px;
+            box-shadow: 0px 0px 50px black;
+            padding: 30px;
+
+        }
+        .output{
+              height: 60px;
+              width: 80%;
+              font-size: 40px;
+              text-align: right;
+              padding: 0px 20px;
+        }
+        input{
+            height: 60px;
+            width: 60px;
+            margin: 10px;
+            border-radius: 50px;
+            background-color: gray;
+            border: none;
+            color: aliceblue;
+            font-size: 15px;
+            font-family: arial black;
+        }
+        input:hover{
+            cursor: pointer;
+        }
+        input[name='operator'], .org{
+            background-color: orange;
+        }
+        .eql{
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div class="parent-div">
+         <form action="">
+            <div class="data">
+                 <input type="text" name="op" class="output">
+            </div>
+            <div>
+                <input type="button" name="ac" value="AC" class="org" onclick="op.value=' '">
+                <input type="button" name="c" value="C"  class="org" onclick="op.value=op.value.slice(0,-1)">
+                <input type="button" name="operator" value="/" onclick="op.value+='/'">
+                <input type="button" name="operator" value="%" onclick="op.value+='%'">
+            </div>
+            <div>
+                <input type="button" name="num" value="9" onclick="op.value+=9">
+                <input type="button" name="num" value="8" onclick="op.value+=8">
+                <input type="button" name="num" value="7" onclick="op.value+=7">
+                <input type="button" name="operator" value="+" onclick="op.value+='+'">
+            </div>
+            <div>
+                <input type="button" name="num" value="6" onclick="op.value+=6">
+                <input type="button" name="num" value="5" onclick="op.value+=5">
+                <input type="button" name="num" value="4" onclick="op.value+=4">
+                <input type="button" name="operator" value="-" onclick="op.value+='-'">
+            </div>
+            <div>
+                <input type="button" name="num" value="3" onclick="op.value+=3">
+                <input type="button" name="num" value="2" onclick="op.value+=2">
+                <input type="button" name="num" value="1" onclick="op.value+=1">
+                <input type="button" name="operator" value="*" onclick="op.value+='*'">
+            </div>
+            <div>
+                <input type="button" name="num" value="0" onclick="op.value+=0">
+                <input type="button" name="num" value="." onclick="op.value+='.'">
+                <input type="button" name="operator" value="=" onclick=op.value=eval(op.value) class="eql">
+            </div>
+          </form>
+       </div>
+    </div>
+</body>
+</html>
